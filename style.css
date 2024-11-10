@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #f7e4c3;
+    color: #3e2f25;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    color: #b85c38;
+}
+
+.section{
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2{
+    font-size: 2rem;
+    color: #b85c38;
+    margin-bottom: 10px;
+}
+
+.section p{
+    font-size: 1.1rem;
+    color: #3e2f25;
+}
+
+#layers{
+    background-color: #fdd5d5;
+}
+
+#bubble-up{
+    background-color: #c8e6c9;
+}
+
+#sip-slowly{
+    background-color: #fff5e1;
+}
+
+#sip-smile-repeat{
+    background-color: #f28b82;
+    color: #fff;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    fons-size: 0.9rem;
+    color: #b85c38;
+}
+
+.section:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+span{
+    color: red;
+}
+
+#bubble-container{
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    box-shadow: 0 20px 30px rgba(31, 30, 30, 0.2), inset 0 10px 30px 5px #a33900;
+    border-radius: 50%;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 100%;
+}
+
+.bubble.x1{
+    animation: bubble 23s linear infinite;
+    left: 5%;
+    top: 100%;
+    transform: scale(0.9);
+}
+.bubble.x2{
+    animation: bubble 16s linear infinite;
+    left: 25%;
+    top: 90%;
+    transform: scale(0.5);
+}
+.bubble.x3{
+    animation: bubble 8s linear infinite;
+    left: 10%;
+    top: 40%;
+    transform: scale(0.7);
+}
+.bubble.x4{
+    animation: bubble 10s linear infinite;
+    left: 20%;
+    top: 0%;
+    transform: scale(0.3);
+}
+.bubble.x5{
+    animation: bubble 5s linear infinite;
+    left: 30%;
+    top: 50%;
+    transform: scale(0.6);
+}
+.bubble.x6{
+    animation: bubble 20s linear infinite;
+    left: 50%;
+    top: 0%;
+    transform: scale(0.7);
+}
+.bubble.x7{
+    animation: bubble 12s linear infinite;
+    left: 65%;
+    top: 75%;
+    transform: scale(0.5);
+}
+.bubble.x8{
+    animation: bubble 15s linear infinite;
+    left: 80%;
+    top: 10%;
+    transform: scale(0.3);
+}
+.bubble.x9{
+    animation: bubble 20s linear infinite;
+    left: 90%;
+    top: 50%;
+    transform: scale(0.6);
+}
+.bubble.x10{
+    animation: bubble 9s linear infinite;
+    left: 80%;
+    top: 80%;
+    transform: scale(0.3);
+}
+
+@keyframes bubble {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: -10%;
+        opacity: 0;
+    }
+}
